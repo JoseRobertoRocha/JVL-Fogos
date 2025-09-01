@@ -494,4 +494,26 @@ footer {
   margin: 1.8rem 0;
 }
 
+.btn-contratar {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  background: linear-gradient(90deg, #00e1ff, #00ffa3);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 225, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-contratar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 225, 255, 0.6);
+  background: linear-gradient(90deg, #00ffa3, #00e1ff);
+}
+
+
 
