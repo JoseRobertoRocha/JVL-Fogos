@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de Informações — JVL Fogos</title>
+  <!-- Use caminho relativo ao invés de C:\ -->
   <link rel="stylesheet" href="Stylesdapagina/informacoes.css">
 </head>
 <body>
@@ -13,7 +14,11 @@
       <img src="Ftsfogos/logoperfil.png" alt="Logo JVL Fogos" class="logo-img">
       <span class="logo-text">JVL Fogos</span>
     </div>
-    <nav>
+
+    <!-- Botão hamburguer -->
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="navLinks">
       <a href="index.html">Início</a>
       <a href="produtos.html">Produtos</a>
       <a href="galeria.html">Galeria</a>
@@ -28,7 +33,7 @@
     <p class="intro">Saiba mais sobre o uso consciente, seguro e legal de fogos de artifício.</p>
 
     <div class="info-grid">
-      <!-- Card 1 -->
+      <!------------------------------------------ Card 1 -->
       <article class="info-card">
         <img src="galeria/fogosdeartificios.jpg" alt="Fogos e legislação">
         <h2>Fogos de artifício: o que diz a lei?</h2>
@@ -36,7 +41,7 @@
         <a href="#" class="btn" data-info="Fogos de artifícios representam festejos... [texto completo aqui]">Saiba Mais</a>
       </article>
 
-      <!-- Card 2 -->
+      <!--------------------------------------------- Card 2 -->
       <article class="info-card">
         <img src="galeria/pontosdevendas.jpg" alt="Compra segura">
         <h2>Atenção à compra e pontos de venda</h2>
@@ -44,7 +49,7 @@
         <a href="#" class="btn" data-info="O primeiro passo, e talvez o mais importante... [texto completo aqui]">Saiba Mais</a>
       </article>
 
-      <!-- Card 3 -->
+      <!---------------------------------------------- Card 3 -->
       <article class="info-card">
         <img src="galeria/primirosocorros.jpg" alt="Primeiros socorros">
         <h2>Primeiros socorros: como proceder?</h2>
@@ -52,15 +57,15 @@
         <a href="#" class="btn" data-info="Mesmo tomando todas as medidas de cuidado... [texto completo aqui]">Saiba Mais</a>
       </article>
 
-      <!-- Card 4 -->
+      <!---------------------------------------------- Card 4 -->
       <article class="info-card">
         <img src="imgs/classificacao.jpg" alt="Classificação dos fogos">
         <h2>Classificação dos fogos artificios</h2>
-        <p>Fogos de Artifícios I. Classe A a) fogos de vista, sem estampido...</p>
+        <p>Fogos de Artifícios I. Classe A a fogos de vista, sem estampido...</p>
         <a href="#" class="btn" data-info="Fogos de Artifícios I. Classe A a) fogos de vista, sem estampido...">Saiba Mais</a>
       </article>
 
-      <!-- Card 5 -->
+      <!-------------------------------------------------------- Card 5 -->
       <article class="info-card">
         <img src="imgs/casamento.jpg" alt="Fogos em casamentos">
         <h2>Fogos de Artifício para Casamentos</h2>
@@ -68,7 +73,7 @@
         <a href="#" class="btn" data-info="Fogos em casamentos proporcionam um espetáculo inesquecível...">Saiba Mais</a>
       </article>
 
-      <!-- Card 6 -->
+      <!----------------------------------------- Card 6 -->
       <article class="info-card">
         <img src="imgs/pet.jpg" alt="Pets e fogos">
         <h2>Veja como acalmar seu pet</h2>
@@ -86,24 +91,24 @@
     </div>
   </main>
 
- <!-- Popup -->
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <span id="popup-close">&times;</span>
-    <div class="popup-header">
-      <img id="popup-icon" src="" alt="Ícone" class="popup-icon">
-      <h3 id="popup-title">Informação Detalhada</h3>
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="popup-close">&times;</span>
+      <div class="popup-header">
+        <img id="popup-icon" src="" alt="Ícone" class="popup-icon">
+        <h3 id="popup-title">Informação Detalhada</h3>
+      </div>
+      <p id="popup-text"></p>
     </div>
-    <p id="popup-text"></p>
   </div>
-</div>
 
   <!-- Footer -->
   <footer>
     © <span id="y"></span> — JVL Fogos | Segurança e emoção em cada celebração
   </footer>
 
-  <script src="JsdaPagina/informacoes.js"></script>
+  <!-- Corrigido: caminho relativo para o JS -->
+  <script src="Js-da-Pagina/informacoes.js"></script>
 </body>
-
 </html>
