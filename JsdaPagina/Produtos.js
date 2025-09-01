@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5575983130394"; 
+const WHATSAPP_NUMBER = "5575998808146"; 
 
 const $ = (s, el=document)=>el.querySelector(s);
 const $$ = (s, el=document)=>[...el.querySelectorAll(s)];
@@ -209,4 +209,5 @@ document.addEventListener("DOMContentLoaded", () => {
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   });
+
 });
